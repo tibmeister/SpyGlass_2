@@ -21,3 +21,13 @@ jobs:
           version_format: "${major}.${minor}.${patch}"
           enable_prerelease_mode: false
           debug: false
+      - name: Create-Release
+        id: create-release
+        uses: actions/create-release@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ version }}
+          release_name: ${{ version }}
+          draft: false
+          prerelease: false
