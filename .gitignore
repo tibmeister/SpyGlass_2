@@ -1,0 +1,3 @@
+./conf
+./private
+docker-compose.yml
