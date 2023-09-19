@@ -1,6 +1,6 @@
 name: Autobump Main Version
 on:
-  pull_request:
+  push:
     branches:
       - main
 jobs:
