@@ -12,7 +12,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Autobump
-        id: version
+        id: autobump
         uses: paulhatch/semantic-version@v5.2.1
         with:
           tag_prefix: "v"
@@ -27,7 +27,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ steps.vars.outputs.version }}
-          release_name: ${{ steps.vars.outputs.version }}
+          tag_name: ${{ steps.autobump.outputs.version }}
+          release_name: ${{ steps.autobump.outputs.version }}
           draft: false
           prerelease: false
