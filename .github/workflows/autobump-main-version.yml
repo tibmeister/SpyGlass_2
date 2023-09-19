@@ -25,7 +25,7 @@ jobs:
         id: create-release
         uses: actions/create-release@latest
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT }}
         with:
           tag_name: ${{ steps.autobump.outputs.version }}
           release_name: ${{ steps.autobump.outputs.version }}
