@@ -1,6 +1,12 @@
 # SpyGlass v2
 Second generation of my SpyGlass Docker Stack for monitoring
 
+![GitHub issues](https://img.shields.io/github/issues/tibmeister/SpyGlass_2?style=plastic)
+![GitHub](https://img.shields.io/github/license/tibmeister/SpyGlass_2?style=plastic)
+![GitHub tag (with filter)](https://img.shields.io/github/v/tag/tibmeister/SpyGlass_2?style=plastic)
+![GitHub release (with filter)](https://img.shields.io/github/v/release/tibmeister/SpyGlass_2?style=plastic)
+
+
 ## Table of Contents
 
 - [SpyGlass v2](#spyglass-v2)
